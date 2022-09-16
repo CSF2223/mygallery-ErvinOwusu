@@ -1,7 +1,170 @@
 /*
 Color Palette:
-background color:  
-font color:        
-secondary color:   
-tertiary color:    
+background color: #1c1b1b
+font color: #FFF
+secondary color: #423F3E
+tertiary color: #F0CD9F
 */
+
+/* CSS syntax notes:
+    selector {property: value;}
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
+/* 
+font-family: 'Quicksand', sans-serif;
+font-family: 'Rubik', sans-serif;
+font-family: 'Courgette', cursive;
+*/
+
+html {
+    font-size: 62.5%;    /* Default font size is 16px -  62.5% of 16 is 10px - 
+                            1 rem (relative unit) now will be equivalent to 10px} */
+}
+
+header {
+    margin: 0 4rem;
+    letter-spacing: 0.8rem;
+    text-align: center;
+    padding: 0.5rem;
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    text-shadow: 4px 3px 2px #000000;
+}
+
+body {
+    background-color: #212020;
+    color: #FFF;
+    font-family: 'Quicksand', sans-serif;
+    margin: 0;
+}
+
+cite {
+    font-size: 2rem;
+}
+
+p {
+    font-size: 1.2rem;
+}
+
+.imageCard {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem 1rem;
+}
+
+.imageCard img {
+    width: 100%;
+    height: auto;
+    border-radius: 30px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.imageCard a {
+    text-decoration none;
+    color: #F0CD9F;
+}
+
+.cardText {
+    color: #FFF;
+    text-align: center;
+    padding: 1rem;
+    border-radius: 15px;
+    margin-top: 2rem;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, .19);
+    border: 2px solid rgba(255, 255, 255, .1);
+    width: 50%;
+}
+
+@media (min-width: 768px) {
+    header {
+        font-size: 1.6rem;
+    }
+    
+    .gallery {
+        display: flex;
+        flex-direction: rows;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+    
+    .imageCard {
+        max-width: 30%;
+    }
+}
+
+/* COLOR LINK CLASSES */
+.green a {
+    color: #4CAA52;
+}
+.purple1 a {
+    color: #594393;
+}
+.purple2 a {
+    color: #C3ABBE;
+}
+.orange a {
+    color: #FC7C3F;
+}
+.yellow a {
+    color: #CAC012;
+}
+.red a {
+    color: #E44D59;
+}
+.salmon a {
+    color: #EE747F;
+}
+.blue a{
+    color: #03bafc;
+}
+
+/* COLOR DROP SHADOW CLASSES */
+.green img:hover {
+    filter: drop-shadow(.1em .3em .3em #4CAA52);
+}
+.purple1 img:hover {
+    filter: drop-shadow(.1em .3em .3em #594393);
+}
+.purple2 img:hover {
+    filter: drop-shadow(.1em .3em .3em #C3ABBE);
+}
+.orange img:hover {
+    filter: drop-shadow(.1em .3em .3em #FC7C3F);
+}
+.yellow img:hover {
+    filter: drop-shadow(.1em .3em .3em #CAC012);
+}
+.red img:hover {
+    filter: drop-shadow(.1em .3em .3em #E44D59);
+}
+.salmon img:hover {
+    filter: drop-shadow(.1em .3em .3em #EE747F);
+}
+.blue img:hover {
+    filter: drop-shadow(.1em .3em .3em #bafcFF);
+}
+
+/* ---------------- ANIMATION ----------------*/
+img:hover {
+    transform: scale(1.04);
+    filter: brightness(200%);
+    filter: drop-shadow(.1em .3em .3em #FFFFFF);
+}
+img {
+    transition: transform .2s, filter .2s; /* Animation */
+}
+a:hover{
+    transform: scale(40px);
+    filter: brightness(200%);
+    filter: drop-shadow(.1em .3em .3em #000);
+    color: white;
+}
+a {
+    transition: transform .2s, filter .5s, color 1s; /* Animation */
+}    
