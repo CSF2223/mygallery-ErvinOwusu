@@ -13,11 +13,13 @@ tertiary color: #F0CD9F
 @import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Handlee&display=swap');
 
 /* 
 font-family: 'Quicksand', sans-serif;
 font-family: 'Rubik', sans-serif;
 font-family: 'Courgette', cursive;
+font-family: 'Handlee', cursive;
 */
 
 html {
@@ -36,7 +38,7 @@ header {
 }
 
 body {
-    background-color: #212020;
+    background-image: linear-gradient(to bottom right, #141212, #363131);
     color: #FFF;
     font-family: 'Quicksand', sans-serif;
     margin: 0;
